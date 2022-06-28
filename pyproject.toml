@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lunch"
+version = "2.0.0"
+description = "Lunch Topic Generator"
+dependencies = [
+    "gunicorn",
+    "uvicorn",
+    "fastapi",
+    "feedparser",
+    "aiohttp",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "flake8",
+]
+
